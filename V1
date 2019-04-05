@@ -1,0 +1,130 @@
+import random
+
+def guessing_game():
+    Score = 0
+    Next_Question = True
+    Grand_Theft_Auto = ["Trevor Philips", "Big Smoke", "Carl"]
+    Pokemon = ["Pikachu"]
+    Tomb_Raider = ["Lara Croft"]
+    Hitman = ["Agent 47"]
+    Mario = ["Mario", "Luigi", "Princess Peach", "Yoshi"]
+    Donkey_Kong = ["Diddy Kong"]
+    Legend_of_Zelda = ["Link"]
+    Halo = ["Master Chief"]
+    Mortal_Kombat = ["Scorpion", "Sub Zero"]
+    Assassins_Creed = ["Ezio Auditore"]
+    Fallout = ["Vault boy"]
+    
+    while Next_Question == True:
+        Character_Category_Choice = random.randint(1,10)
+        if Character_Category_Choice == 1:
+            Character_Guess = str(raw_input("Name the main character from Tomb Raider: "))
+            if Character_Guess in Tomb_Raider:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Character_Category_Choice == 2:
+            Character_Guess = str(raw_input("Name the main yellow Pokemon: "))
+            if Character_Guess in Pokemon:
+               Score = Score + 1
+               print("Correct! Your score is now " + str(Score) + ".")
+               Want_New_Question = raw_input("Would you like a new question?: ")
+               if Want_New_Question == ("Yes"):
+                    Next_Question == True
+               else:
+                    Next_Question == False
+        if Character_Category_Choice == 3:
+            Character_Guess = str(raw_input("What is another name for Spartan 117?: "))
+            if Character_Guess in Halo:
+               Score = Score + 1
+               print("Correct! Your score is now " + str(Score) + ".")
+               Want_New_Question = raw_input("Would you like a new question?: ")
+               if Want_New_Question == ("Yes"):
+                    Next_Question == True
+               else:
+                    Next_Question == False
+        if Character_Category_Choice == 4:
+            Character_Guess = str(raw_input("Who says, Ill have two number 9s, a number 9 large, a number 6 with extra dip, a number 7, two number 45s, one with cheese, and a large soda in Grand Theft Auto: San Andreas?: "))
+            if Character_Guess in Grand_Theft_Auto:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Character_Category_Choice == 5:
+            Character_Guess = str(raw_input("Who wears an M labelled hat in a series of games?: "))
+            if Character_Guess in Mario:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Character_Category_Choice == 6:
+            Character_Guess = str(raw_input("Who wears an L labelled hat in the Mario series?: "))
+            if Character_Guess in Mario:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Character_Category_Choice == 7:
+            Character_Guess = str(raw_input("Who's the princess that gets kidnapped in the Mario games?: "))
+            if Character_Guess in Mario:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Character_Category_Choice == 8:
+            Character_Guess = str(raw_input("Who's the green dinosaur in the Mario games?: "))
+            if Character_Guess in Mario:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Character_Category_Choice == 9:
+            Character_Guess = str(raw_input("Who was the first assassin in Assassins Creed:? "))
+            if Character_Guess in Assassins_Creed:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Character_Category_Choice == 10:
+            Character_Guess = str(raw_input("Who's Donkey Kongs sidekick?: "))
+            if Character_Guess in Donkey_Kong:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        if Character_Category_Choice == 11:
+            Character_Guess = str(raw_input("Who is the main character of The Legend of Zelda?: "))
+            if Character_Guess in Legend_of_Zelda:
+                Score = Score + 1
+                print("Correct! Your score is now " + str(Score) + ".")
+                Want_New_Question = raw_input("Would you like a new question?: ")
+                if Want_New_Question == ("Yes"):
+                    Next_Question == True
+                else:
+                    Next_Question == False
+        
